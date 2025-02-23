@@ -13,12 +13,9 @@ const Feature = () => {
           {/* <!-- Section Title Start --> */}
           <SectionHeader
             headerInfo={{
-              title: "KEY CAPABILITIES",
-              subtitle: "Advanced Features for Sustainable Design",
-              description: `Our AI-powered simulation platform combines cutting-edge technology 
-              with practical design tools to help architects and engineers create more 
-              sustainable, energy-efficient buildings. Discover how our features can 
-              transform your design process.`,
+              title: "FEATURES",
+              subtitle: "Eko Builders Platform Features",
+              description: "Our AI-powered simulation platform provides comprehensive tools for sustainable building design..."
             }}
           />
           {/* <!-- Section Title End --> */}

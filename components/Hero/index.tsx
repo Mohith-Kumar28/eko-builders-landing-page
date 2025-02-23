@@ -19,17 +19,11 @@ const Hero = () => {
                 🌱 Eko Builders - Sustainable Building Design
               </h4>
               <h1 className="mb-5 pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero">
-                AI-Powered Simulation for{" "}
-                <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark">
-                  Sustainable
-                </span>{" "}
-                Building Design
+                Transform Building Design with Eko Builders' AI-Powered Simulation
               </h1>
               <p>
-                Transform your building design process with our advanced AI simulation platform. 
-                Combining sophisticated artificial intelligence with real-time simulation, 
-                we provide architects and engineers with data-driven insights for creating 
-                energy-efficient, sustainable, and resilient buildings.
+                Eko Builders revolutionizes sustainable architecture through advanced AI simulation, 
+                helping architects and engineers create energy-efficient, environmentally resilient buildings.
               </p>
 
               <div className="mt-10">

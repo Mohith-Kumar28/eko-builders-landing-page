@@ -7,7 +7,7 @@ const About = () => {
   return (
     <>
       {/* <!-- ===== About Start ===== --> */}
-      <section className="overflow-hidden pb-20 lg:pb-25 xl:pb-30">
+      <section id="about" className="overflow-hidden pb-20 lg:pb-25 xl:pb-30">
         <div className="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0">
           <div className="flex items-center gap-8 lg:gap-32.5">
             <motion.div
@@ -63,7 +63,7 @@ const About = () => {
                 <span className="mb-4 mr-4 inline-flex rounded-full bg-meta px-4.5 py-1 text-metatitle uppercase text-white">
                   Innovation
                 </span>{" "}
-                Advanced Building Design Technology
+                Eko Builders Technology
               </span>
               <h2 className="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
                 Transform Building Design with{" "}
@@ -73,7 +73,7 @@ const About = () => {
                 Simulation
               </h2>
               <p>
-                Our platform combines advanced artificial intelligence with sophisticated simulation techniques, 
+                At Eko Builders, we combine advanced artificial intelligence with sophisticated simulation techniques, 
                 providing architects and engineers with data-driven insights for sustainable building design.
               </p>
 

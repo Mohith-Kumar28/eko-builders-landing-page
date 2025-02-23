@@ -27,6 +27,15 @@ const Header = () => {
     window.addEventListener("scroll", handleStickyMenu);
   });
 
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
+    e.preventDefault();
+    setNavigationOpen(false);
+    const element = document.querySelector(path);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <header
       className={`fixed left-0 top-0 z-99999 w-full py-7 ${
@@ -37,22 +46,20 @@ const Header = () => {
     >
       <div className="relative mx-auto max-w-c-1390 items-center justify-between px-4 md:px-8 xl:flex 2xl:px-0">
         <div className="flex w-full items-center justify-between xl:w-1/4">
-          <a href="/">
-            <Image
-              src="/images/logo/logo-dark.svg"
-              alt="logo"
-              width={119.03}
-              height={30}
-              className="hidden w-full dark:block"
-            />
-            <Image
-              src="/images/logo/logo-light.svg"
-              alt="logo"
-              width={119.03}
-              height={30}
-              className="w-full dark:hidden"
-            />
-          </a>
+          <div className="w-full lg:w-1/4">
+            <Link
+              href="/"
+              className="header-logo block w-full dark:hidden"
+            >
+              <span className="text-xl font-bold">Eko Builders</span>
+            </Link>
+            <Link
+              href="/"
+              className="header-logo hidden w-full dark:block"
+            >
+              <span className="text-xl font-bold text-white">Eko Builders</span>
+            </Link>
+          </div>
 
           {/* <!-- Hamburger Toggle BTN --> */}
           <button
@@ -135,8 +142,9 @@ const Header = () => {
                       </ul>
                     </>
                   ) : (
-                    <Link
-                      href={`${menuItem.path}`}
+                    <a
+                      href={menuItem.path || '#'}
+                      onClick={(e) => handleScroll(e, menuItem.path || '#')}
                       className={
                         pathUrl === menuItem.path
                           ? "text-primary hover:text-primary"
@@ -144,7 +152,7 @@ const Header = () => {
                       }
                     >
                       {menuItem.title}
-                    </Link>
+                    </a>
                   )}
                 </li>
               ))}
@@ -154,18 +162,13 @@ const Header = () => {
           <div className="mt-7 flex items-center gap-6 xl:mt-0">
             <ThemeToggler />
 
-            <Link
-              href="https://github.com/NextJSTemplates/solid-nextjs"
-              className="text-regular font-medium text-waterloo hover:text-primary"
-            >
-              GitHub Repo 🌟
-            </Link>
 
             <Link
-              href="https://nextjstemplates.com/templates/solid"
+              href="#support"
+              onClick={(e) => handleScroll(e, "#support")}
               className="flex items-center justify-center rounded-full bg-primary px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out hover:bg-primaryho"
             >
-              Get Pro 🔥
+              Contact Us
             </Link>
           </div>
         </div>

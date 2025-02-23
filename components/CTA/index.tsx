@@ -28,12 +28,10 @@ const CTA = () => {
               className="animate_left md:w-[70%] lg:w-1/2"
             >
               <h2 className="mb-4 w-11/12 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle4">
-                Transform Your Building Design Process Today
+                Transform Your Building Design Process with Eko Builders
               </h2>
               <p>
-                Experience the power of AI-driven simulation for sustainable building design. 
-                Join leading architects and engineers in creating energy-efficient, 
-                environmentally resilient buildings with real-time performance insights.
+                Join leading architects and engineers using Eko Builders' AI-powered platform for sustainable design...
               </p>
             </motion.div>
             <motion.div
