@@ -61,7 +61,7 @@ const Header = () => {
             </Link>
             <Link
               href="/"
-              className="header-logo hidden w-full dark:block"
+              className="header-logo hidden w-24 dark:block"
             >
               <Image
                 src="/images/logo/image.png"

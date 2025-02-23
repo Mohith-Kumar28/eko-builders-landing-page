@@ -14,10 +14,8 @@ import Blog from "@/components/Blog";
 import Testimonial from "@/components/Testimonial";
 
 export const metadata: Metadata = {
-  title: "Next.js Starter Template for SaaS Startups - Solid SaaS Boilerplate",
-
-  // other metadata
-  description: "This is Home for Solid Pro"
+  title: "Eko Builders | AI-Powered Sustainable Building Design",
+  description: "Transform your building design process with Eko Builders' advanced AI simulation platform. Create energy-efficient, sustainable buildings with real-time performance insights."
 };
 
 export default function Home() {
