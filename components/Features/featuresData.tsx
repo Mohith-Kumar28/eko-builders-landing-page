@@ -1,47 +1,55 @@
 import { Feature } from "@/types/feature";
+import {
+  Brain,
+  Gauge,
+  BarChart3,
+  Settings2,
+  ShieldCheck,
+  Puzzle
+} from "lucide-react";
 
 const featuresData: Feature[] = [
   {
     id: 1,
-    icon: "/images/icon/icon-01.svg",
-    title: "Crafted for SaaS",
+    icon: Brain,
+    title: "Advanced AI Modeling",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Leverage deep neural networks and reinforcement learning algorithms for accurate performance predictions and continuous system improvement.",
   },
   {
     id: 2,
-    icon: "/images/icon/icon-02.svg",
-    title: "High-quality Design",
+    icon: Gauge,
+    title: "Real-Time Simulation",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Get instant feedback on design changes with our GPU-accelerated cloud computing framework, enabling thousands of parallel simulations.",
   },
   {
     id: 3,
-    icon: "/images/icon/icon-03.svg",
-    title: "Next.js 13 + TypeScript",
+    icon: Puzzle,
+    title: "Seamless Integration",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Works smoothly with industry-standard tools like Autodesk Revit and Rhino/Grasshopper through custom-developed plugins and APIs.",
   },
   {
     id: 4,
-    icon: "/images/icon/icon-04.svg",
-    title: "Sanity Blog and Docs",
+    icon: BarChart3,
+    title: "Data-Driven Insights",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Access comprehensive analytics on energy efficiency, environmental impact, and building performance to inform design decisions.",
   },
   {
     id: 5,
-    icon: "/images/icon/icon-05.svg",
-    title: "DB, Auth and Stripe",
+    icon: Settings2,
+    title: "Automated Optimization",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Utilize machine learning algorithms to automatically refine designs for optimal energy efficiency and sustainability metrics.",
   },
   {
     id: 6,
-    icon: "/images/icon/icon-06.svg",
-    title: "Regular Free Updates",
+    icon: ShieldCheck,
+    title: "Environmental Compliance",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Ensure designs meet or exceed sustainability standards and building codes through automated compliance checking.",
   },
 ];
 

@@ -1,6 +1,8 @@
-export type Feature = {
+import { LucideIcon } from "lucide-react";
+
+export interface Feature {
   id: number;
-  icon: string;
+  icon: LucideIcon;
   title: string;
   description: string;
-};
+}

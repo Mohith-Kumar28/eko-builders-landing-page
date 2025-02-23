@@ -13,8 +13,8 @@ const Pricing = () => {
             <SectionHeader
               headerInfo={{
                 title: `PRICING PLANS`,
-                subtitle: `Simple Pricing`,
-                description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.`,
+                subtitle: `Flexible Solutions`,
+                description: `Choose the plan that best fits your organization's needs, from individual architects to large design firms. All plans include our core AI simulation capabilities with varying levels of computational resources and support.`,
               }}
             />
           </div>
@@ -34,39 +34,39 @@ const Pricing = () => {
             {/* <!-- Pricing Item --> */}
             <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
               <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                $10{" "}
+                $499{" "}
                 <span className="text-regular text-waterloo dark:text-manatee">
                   /month
                 </span>
               </h3>
               <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
-                Small Pack
+                Professional
               </h4>
-              <p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p>
+              <p>Perfect for individual architects and small teams</p>
 
               <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
                 <ul>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    300 GB Storage
+                    Up to 50 simulations per day
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Unlimited Photos and Videos
+                    Integration with Revit & Grasshopper
+                  </li>
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                    Basic email support
                   </li>
                   <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
-                    Exclusive Support
-                  </li>
-                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
-                    Custom Branding Strategy
+                    Custom API access
                   </li>
                 </ul>
               </div>
 
               <button
-                aria-label="Get the Plan button"
+                aria-label="Get started with Professional plan"
                 className="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"
               >
                 <span className="duration-300 group-hover/btn:pr-2">
-                  Get the Plan
+                  Get Started
                 </span>
                 <svg
                   width="14"
@@ -89,39 +89,39 @@ const Pricing = () => {
               </div>
 
               <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                $59{" "}
+                $1,499{" "}
                 <span className="text-regular text-waterloo dark:text-manatee">
                   /month
                 </span>
               </h3>
               <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
-                Medium Pack
+                Business
               </h4>
-              <p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p>
+              <p>Ideal for design firms and larger teams</p>
 
               <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
                 <ul>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    300 GB Storage
+                    Unlimited simulations
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Unlimited Photos and Videos
+                    Full software integration suite
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Exclusive Support
+                    Priority support & training
                   </li>
-                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
-                    Custom Branding Strategy
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                    Custom API & workflow automation
                   </li>
                 </ul>
               </div>
 
               <button
-                aria-label="Get the Plan button"
+                aria-label="Get started with Business plan"
                 className="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"
               >
                 <span className="duration-300 group-hover/btn:pr-2">
-                  Get the Plan
+                  Get Started
                 </span>
                 <svg
                   width="14"
@@ -140,39 +140,39 @@ const Pricing = () => {
             {/* <!-- Pricing Item --> */}
             <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
               <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                $189{" "}
+                Custom{" "}
                 <span className="text-regular text-waterloo dark:text-manatee">
-                  /month
+                  pricing
                 </span>
               </h3>
               <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
-                Large Pack
+                Enterprise
               </h4>
-              <p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p>
+              <p>For organizations with specialized needs</p>
 
               <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
                 <ul>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    300 GB Storage
+                    Custom simulation capacity
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Unlimited Photos and Videos
+                    Dedicated infrastructure
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Exclusive Support
+                    24/7 dedicated support
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Custom Branding Strategy
+                    Custom ML model training
                   </li>
                 </ul>
               </div>
 
               <button
-                aria-label="Get the Plan button"
+                aria-label="Contact sales for Enterprise plan"
                 className="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"
               >
                 <span className="duration-300 group-hover/btn:pr-2">
-                  Get the Plan
+                  Contact Sales
                 </span>
                 <svg
                   width="14"

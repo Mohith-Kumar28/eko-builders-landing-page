@@ -1,7 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
+import toast from "react-hot-toast";
 
 const Contact = () => {
   /**
@@ -12,6 +13,21 @@ const Contact = () => {
   React.useEffect(() => {
     setHasMounted(true);
   }, []);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    // Add a console.log to verify the function is being called
+    console.log("Form submitted");
+    
+    // Try both success and error toasts to test
+    toast.success("Message sent successfully!");
+    // toast.error("Test error message");
+    
+    const form = e.target as HTMLFormElement;
+    form.reset();
+  };
+
   if (!hasMounted) {
     return null;
   }
@@ -60,10 +76,7 @@ const Contact = () => {
                 Send a message
               </h2>
 
-              <form
-                action="https://formbold.com/s/unique_form_id"
-                method="POST"
-              >
+              <form onSubmit={handleSubmit}>
                 <div className="mb-7.5 flex flex-col gap-7.5 lg:flex-row lg:justify-between lg:gap-14">
                   <input
                     type="text"
@@ -128,12 +141,13 @@ const Contact = () => {
                       htmlFor="default-checkbox"
                       className="flex max-w-[425px] cursor-pointer select-none pl-5"
                     >
-                      By clicking Checkbox, you agree to use our “Form” terms
+                      By clicking Checkbox, you agree to use our "Form" terms
                       And consent cookie usage in browser.
                     </label>
                   </div>
 
                   <button
+                    type="submit"
                     aria-label="send message"
                     className="inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark"
                   >

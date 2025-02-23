@@ -16,7 +16,6 @@ const CTA = () => {
                   opacity: 0,
                   x: -20,
                 },
-
                 visible: {
                   opacity: 1,
                   x: 0,
@@ -29,12 +28,12 @@ const CTA = () => {
               className="animate_left md:w-[70%] lg:w-1/2"
             >
               <h2 className="mb-4 w-11/12 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle4">
-                Join With Us Today & Increase Your Productivity
+                Transform Your Building Design Process Today
               </h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                convallis tortor eros. Donec vitae tortor lacus. Phasellus
-                aliquam ante in maximus.
+                Experience the power of AI-driven simulation for sustainable building design. 
+                Join leading architects and engineers in creating energy-efficient, 
+                environmentally resilient buildings with real-time performance insights.
               </p>
             </motion.div>
             <motion.div
@@ -43,7 +42,6 @@ const CTA = () => {
                   opacity: 0,
                   x: 20,
                 },
-
                 visible: {
                   opacity: 1,
                   x: 0,
@@ -60,14 +58,14 @@ const CTA = () => {
                   width={299}
                   height={299}
                   src="/images/shape/shape-06.png"
-                  alt="Saly"
+                  alt="Sustainable Building"
                   className="hidden xl:block"
                 />
                 <a
                   href="/auth/signup"
                   className="inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white hover:opacity-90 dark:bg-white dark:text-black"
                 >
-                  Sign up free
+                  Request Demo
                   <Image
                     width={20}
                     height={20}
