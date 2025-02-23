@@ -49,15 +49,27 @@ const Header = () => {
           <div className="w-full lg:w-1/4">
             <Link
               href="/"
-              className="header-logo block w-full dark:hidden"
+              className="header-logo block w-24 dark:hidden"
             >
-              <span className="text-xl font-bold">Eko Builders</span>
+              <Image
+                src="/images/logo/image.png"
+                alt="Eko Builders"
+                width={140}
+                height={30}
+                className="w-full"
+              />
             </Link>
             <Link
               href="/"
               className="header-logo hidden w-full dark:block"
             >
-              <span className="text-xl font-bold text-white">Eko Builders</span>
+              <Image
+                src="/images/logo/image.png"
+                alt="Eko Builders"
+                width={140}
+                height={30}
+                className="w-full"
+              />
             </Link>
           </div>
 
