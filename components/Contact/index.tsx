@@ -17,13 +17,10 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Add a console.log to verify the function is being called
-    console.log("Form submitted");
+    // Show success toast
+    toast.success("Message sent successfully! We'll get back to you soon.");
     
-    // Try both success and error toasts to test
-    toast.success("Message sent successfully!");
-    // toast.error("Test error message");
-    
+    // Reset form
     const form = e.target as HTMLFormElement;
     form.reset();
   };
@@ -194,24 +191,16 @@ const Contact = () => {
 
               <div className="5 mb-7">
                 <h3 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
-                  Our Loaction
+                  Our Location
                 </h3>
-                <p>290 Maryam Springs 260, Courbevoie, Paris, France</p>
+                <p>71-75 Shelton Street, London, England, WC2H 9JQ</p>
               </div>
               <div className="5 mb-7">
                 <h3 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
                   Email Address
                 </h3>
                 <p>
-                  <a href="#">yourmail@domainname.com</a>
-                </p>
-              </div>
-              <div>
-                <h4 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
-                  Phone Number
-                </h4>
-                <p>
-                  <a href="#">+009 42334 6343 843</a>
+                  <a href="mailto:info@ekobuilders.com">info@ekobuilders.com</a>
                 </p>
               </div>
             </motion.div>

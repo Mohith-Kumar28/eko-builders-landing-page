@@ -33,12 +33,6 @@ const Pricing = () => {
           <div className="flex flex-wrap justify-center gap-7.5 lg:flex-nowrap xl:gap-12.5">
             {/* <!-- Pricing Item --> */}
             <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
-              <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                $499{" "}
-                <span className="text-regular text-waterloo dark:text-manatee">
-                  /month
-                </span>
-              </h3>
               <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
                 Professional
               </h4>
@@ -55,18 +49,18 @@ const Pricing = () => {
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
                     Basic email support
                   </li>
-                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
                     Custom API access
                   </li>
                 </ul>
               </div>
 
-              <button
-                aria-label="Get started with Professional plan"
+              <a
+                href="#support"
                 className="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"
               >
                 <span className="duration-300 group-hover/btn:pr-2">
-                  Get Started
+                  Contact Sales
                 </span>
                 <svg
                   width="14"
@@ -79,7 +73,7 @@ const Pricing = () => {
                     fill="currentColor"
                   />
                 </svg>
-              </button>
+              </a>
             </div>
 
             {/* <!-- Pricing Item --> */}
@@ -88,12 +82,6 @@ const Pricing = () => {
                 popular
               </div>
 
-              <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                $1,499{" "}
-                <span className="text-regular text-waterloo dark:text-manatee">
-                  /month
-                </span>
-              </h3>
               <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
                 Business
               </h4>
@@ -116,59 +104,8 @@ const Pricing = () => {
                 </ul>
               </div>
 
-              <button
-                aria-label="Get started with Business plan"
-                className="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"
-              >
-                <span className="duration-300 group-hover/btn:pr-2">
-                  Get Started
-                </span>
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M10.4767 6.16701L6.00668 1.69701L7.18501 0.518677L13.6667 7.00034L7.18501 13.482L6.00668 12.3037L10.4767 7.83368H0.333344V6.16701H10.4767Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </button>
-            </div>
-
-            {/* <!-- Pricing Item --> */}
-            <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
-              <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                Custom{" "}
-                <span className="text-regular text-waterloo dark:text-manatee">
-                  pricing
-                </span>
-              </h3>
-              <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
-                Enterprise
-              </h4>
-              <p>For organizations with specialized needs</p>
-
-              <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
-                <ul>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Custom simulation capacity
-                  </li>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Dedicated infrastructure
-                  </li>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    24/7 dedicated support
-                  </li>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Custom ML model training
-                  </li>
-                </ul>
-              </div>
-
-              <button
-                aria-label="Contact sales for Enterprise plan"
+              <a
+                href="#support"
                 className="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"
               >
                 <span className="duration-300 group-hover/btn:pr-2">
@@ -185,7 +122,40 @@ const Pricing = () => {
                     fill="currentColor"
                   />
                 </svg>
-              </button>
+              </a>
+            </div>
+
+            {/* <!-- Pricing Item --> */}
+            <div className="relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-3 dark:border-strokedark dark:bg-blacksection dark:shadow-solid-3 xl:p-12.5">
+              <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
+                Enterprise
+              </h3>
+              <p className="mb-2.5 text-xl font-medium text-black dark:text-white">
+                Contact us for custom pricing
+              </p>
+              <p>Perfect for large scale deployments</p>
+
+              <div className="mt-9">
+                <a
+                  href="#support"
+                  className="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"
+                >
+                  <span className="duration-300 group-hover/btn:pr-2">
+                    Contact Sales
+                  </span>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.4767 6.16701L6.00668 1.69701L7.18501 0.518677L13.6667 7.00034L7.18501 13.482L6.00668 12.3037L10.4767 7.83368H0.333344V6.16701H10.4767Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
